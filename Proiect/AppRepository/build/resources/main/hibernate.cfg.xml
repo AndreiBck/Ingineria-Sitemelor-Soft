@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <property name="dialect">dialect.SQLiteDialect</property>
+        <property name="connection.driver_class">org.sqlite.JDBC</property>
+       <property name="connection.url">jdbc:sqlite:C:/Users/Andrei 0920/OneDrive/Desktop/ISS/BD/IssDB.sqlite</property>
+
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+
+
+        <mapping resource="user/User.hbm.xml"/>
+        <mapping resource="bug/Bug.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>

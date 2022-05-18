@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane prefHeight="350.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AdministratorController">
+
+    <children>
+
+        <GridPane AnchorPane.leftAnchor="0" AnchorPane.topAnchor="0">
+            <children>
+                <Label text="First Name:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <Label text="Last Name:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <Label text="e-Mail:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <Label text="Type:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                <TextField fx:id="firstName" promptText="First Name" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                <TextField fx:id="lastName" promptText="Last Name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <TextField fx:id="eMail" promptText="e-Mail" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <TextField fx:id="password" promptText="Password" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <TextField fx:id="type" promptText="Type" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <Button fx:id="showAll" alignment="CENTER" defaultButton="true" mnemonicParsing="false"  text="Show all" onAction="#pressShowAllBtn" GridPane.rowIndex="5"/>
+                <Button fx:id="add" alignment="CENTER" defaultButton="true" mnemonicParsing="false" text="Add user" onAction="#pressAddButton" GridPane.rowIndex="6"/>
+                <Button fx:id="update" alignment="CENTER" defaultButton="true" mnemonicParsing="false" text="Update user" onAction="#pressUpdateButton" GridPane.rowIndex="7"/>
+                <Button fx:id="remove" alignment="CENTER" defaultButton="true" mnemonicParsing="false" text="Delete user" onAction="#pressDeleteButton" GridPane.rowIndex="8"/>
+            </children>
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="109.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="228.0" minWidth="10.0" prefWidth="189.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="228.0" minWidth="10.0" prefWidth="189.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+        </GridPane>
+
+        <ListView fx:id="listaUsers" layoutX="29.0" layoutY="161.0" prefHeight="250.0" prefWidth="400.0" AnchorPane.leftAnchor="300" AnchorPane.topAnchor="0">
+        </ListView>
+
+    </children>
+
+</AnchorPane>

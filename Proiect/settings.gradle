@@ -1,2 +1,9 @@
 rootProject.name = 'Proiect'
+include 'AppDomain'
+include 'AppRepository'
+include 'AppRepository'
+include 'AppServices'
+include 'AppServer'
+include 'AppClient'
+include 'AppNetworking'
 
